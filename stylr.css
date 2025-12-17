@@ -1,0 +1,108 @@
+@@ -1,70 +1,71 @@
+/* Thiết lập cơ bản (Reset/Normalize) */
+/* Thiết lập cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Đặt màu nền chung cho trang */
+    background-color: #f4f4f4; 
+    background-color: #f0f0f0; /* Màu nền tổng thể, hơi nhạt */
+    color: #333;
+}
+
+/* Thanh Điều Hướng (Topnav) - Dải màu đỏ ở trên cùng */
+/* Thanh điều hướng (Topnav) */
+.topnav {
+    background-color: #333; /* Màu nền đen sẫm */
+    overflow: hidden;
+    padding: 10px 0; /* Thêm padding trên và dưới */
+    background-color: #333; /* Màu nền đen đậm */
+    color: white;
+    padding: 0; /* Loại bỏ padding để các link dính sát vào nhau */
+    display: flex; /* Dùng flexbox để căn chỉnh các link */
+    align-items: stretch;
+}
+
+/* Các liên kết trong Topnav */
+.topnav a {
+    float: left;
+    color: white; /* Màu chữ trắng */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    padding: 14px 16px; /* Padding cho các link */
+    text-decoration: none;
+    font-size: 17px;
+    /* Căn chỉnh đường viền đen bên trái để giống hình mẫu */
+    border-left: 1px solid #111; 
+    border-right: 1px solid #444; /* Thêm đường viền nhỏ nếu cần */
+}
+
+/* Loại bỏ đường viền ở liên kết đầu tiên */
+.topnav a:first-child {
+    border-left: none;
+/* Loại bỏ border cho link cuối cùng nếu muốn */
+.topnav a:last-child {
+    border-right: none;
+}
+
+/* Hiệu ứng di chuột */
+.topnav a:hover {
+    background-color: #555;
+    background-color: #575757;
+    color: white;
+}
+
+/* Khu Vực Nội Dung Chính - Màu xám nhạt lớn */
+.content-area {
+    padding: 30px 40px;
+    /* Màu nền xám nhạt giống hình */
+    background-color: #e9e9e9; 
+    /* Đảm bảo nội dung lấp đầy không gian giữa topnav và footer */
+    min-height: 50vh; 
+/* Khu vực nội dung chính (Content) */
+.content {
+    /* Đảm bảo nội dung chiếm hết chiều rộng giữa topnav và footer */
+    min-height: calc(100vh - 51px - 40px); /* Ví dụ: 100vh trừ chiều cao topnav và footer */
+    background-color: #e0e0e0; /* Màu nền xám nhạt */
+    padding: 20px; /* Padding bên trong content */
+    border-bottom: 1px solid #ccc; /* Đường viền nhẹ ngăn cách với footer */
+}
+
+.content-area h1 {
+    font-size: 36px;
+    font-weight: bold;
+.content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content-area p {
+    font-size: 18px;
+    color: #666;
+.content p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 0;
+}
+
+/* Chân Trang (Footer) - Dải màu xám sáng */
+/* Khu vực chân trang (Footer) */
+.footer {
+    /* Màu nền xám sáng, hơi khác với màu nền body */
+    background-color: #ddd; 
+    background-color: #cccccc; /* Màu nền xám nhạt hơn content một chút */
+    color: #333;
+    text-align: left; /* Chữ "Footer" căn trái */
+    padding: 20px 40px;
+    font-size: 16px;
+    /* Đường viền mỏng ở trên để tách biệt, giống hình */
+    border-top: 1px solid #ccc; 
+    text-align: left; /* Căn lề trái theo hình */
+    padding: 10px 20px; /* Padding cho footer */
+    font-size: 14px;
+    border-top: 1px solid #bbb;
